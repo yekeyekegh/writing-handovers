@@ -1,7 +1,7 @@
 ---
 name: writing-handovers
 version: "1.0"
-description: 把当前 Claude Code session 的上下文压缩成一份 handover 交接文档，让下一个 session / 下一棒任务读了就能直接上手。Use ONLY when the user explicitly invokes it (e.g. "/writing-handovers", "写个交接", "做个 handover", "交接给下一棒", "handover 一下")。覆盖实验交接 / 串行任务交接 / 代码开发交接三类场景。单向只写(不负责读接棒)。
+description: 为当前 Claude Code session 生成四段式 handover 交接文档（WHY 目标 / WHAT 本轮产出 / STATE 当前状态 / NEXT 下轮 todo），覆盖实验、串行任务、代码开发三类交接，供下一个 session 直接上手；单向只写。仅在用户【显式调用】时使用：用户运行 /writing-handovers，或明确点名要用本 skill。不要基于推断的意图自动触发——即便用户提到"交接 / handover / 换 session / ctx 快满了 / 总结进度 / 给下一棒留说明"，也不要自动触发；本 skill 也不读取、不更新已有 handover。
 ---
 
 # Writing Handovers (writing-handovers)
