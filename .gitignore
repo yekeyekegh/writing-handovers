@@ -1,0 +1,8 @@
+# Planning docs — kept local, not published to the remote repo
+PLAN*.md
+
+# Skill-development plans/specs (superpowers workflow) — kept local, not published
+docs/superpowers/
+
+# Local Claude Code settings
+.claude/settings.local.json
